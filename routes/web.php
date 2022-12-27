@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\HomeController;
 use App\Http\Controllers\backend\DasboardController;
 
+// use class CategoryController
+use App\Http\Controllers\CategoryController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +19,9 @@ use App\Http\Controllers\backend\DasboardController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// đinh nghĩa route home
-// Route::get('/home',[HomeController::class,'home'])->name('homeRoute');
 // đinh nghĩa route admin
 Route::get('/admin', [DasboardController::class, 'index'])->name('indexRoute');
+// định ngĩa route hiển thị dữ liệu Category
+Route::get('/listCategory',[CategoryController::class,'list'])->name('categoryRoute');
+// định nghĩa route hiển thị form thêm mới Category
+// Route::get('/addCategory',[CategoryController::class,'add'])->name('addCategoryRoute');

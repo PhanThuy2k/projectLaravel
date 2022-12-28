@@ -15,8 +15,8 @@ class CreateProductDetailsTable extends Migration
     {
         Schema::create('product_details', function (Blueprint $table) {
             $table->id();
-            $table->float('price');
-            $table->float('sale_price');
+            $table->float('price',12,2);
+            $table->float('sale_price',12,2);
             $table->tinyInteger('status')->default(1);
 
             // khóa ngoại tới bảng products

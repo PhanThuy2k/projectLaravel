@@ -15,12 +15,12 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('name',100);
-            $table->float('price');
-            $table->float('sale_price');
-            $table->string('image',100);
+            $table->string('name',255);
+            $table->float('price',12,2);
+            $table->float('sale_price',12,2);
+            $table->string('image',255);
             $table->tinyInteger('status')->default(1);
-            $table->string('origin',100);
+            $table->string('origin',255);
             // khoá ngoại tới bảng categories
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');

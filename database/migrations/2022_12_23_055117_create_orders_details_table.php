@@ -15,9 +15,9 @@ class CreateOrdersDetailsTable extends Migration
     {
         Schema::create('orders_details', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
+            $table->string('name', 255);
             $table->integer('quantiti')->unsigned();
-            $table->double('unit_price')->unsigned();
+            $table->double('unit_price',8,2)->unsigned();
 
             // khóa ngoại tới oders
             $table->BigInteger('oder_id')->unsigned();

@@ -25,3 +25,11 @@ Route::get('/admin', [DasboardController::class, 'index'])->name('indexRoute');
 Route::get('/listCategory',[CategoryController::class,'list'])->name('categoryRoute');
 // định nghĩa route hiển thị form thêm mới Category
 // Route::get('/addCategory',[CategoryController::class,'add'])->name('addCategoryRoute');
+
+// 
+Route::get('/', function () {
+    return view('front.index');
+});
+
+
+

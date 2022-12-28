@@ -15,12 +15,12 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('address',100);
-            $table->string('email',100);
-            $table->string('name',100);
+            $table->string('address',255);
+            $table->string('email',255);
+            $table->string('name',255);
             $table->tinyInteger('status')->default(1);
-            $table->string('note',100);
-            $table->string('phone',100);
+            $table->string('note',255);
+            $table->string('phone',255);
             $table->double('total_quantity', 12, 2);
             $table->double('total_price', 12, 2);
 

@@ -15,8 +15,8 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->string('question', 100);
-            $table->string('Answer', 100);
+            $table->string('question', 255);
+            $table->string('Answer', 255);
             $table->tinyInteger('status')->default(1);
 
             // khóa ngoại tới products 

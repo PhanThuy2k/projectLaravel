@@ -1,4 +1,4 @@
-@extends('front.layout.master')
+@extends('fontend.layouts.master')
 @section('title', 'Home')
 @section('body')
     <!-- noi dung danh muc sach(categories) + banner slider -->
@@ -187,15 +187,15 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="#"><img src="front/images/banner-sach-moi.jpg" class="img-fluid"
+                                <a href="#"><img src="fontend/images/banner-sach-moi.jpg" class="img-fluid"
                                         style="height: 386px;" width="900px" alt="First slide"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="front/images/banner-beethoven.jpg" class="img-fluid"
+                                <a href="#"><img src="fontend/images/banner-beethoven.jpg" class="img-fluid"
                                         style="height: 386px;" width="900px" alt="Second slide"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="front/images/neu-toi-biet-duoc-khi-20-full-banner.jpg" class="img-fluid"
+                                <a href="#"><img src="fontend/images/neu-toi-biet-duoc-khi-20-full-banner.jpg" class="img-fluid"
                                         style="height: 386px;" alt="Third slide"></a>
                             </div>
                         </div>
@@ -230,7 +230,7 @@
                         <a href="Lap-trinh-ke-hoach-kinh-doanh-hieu-qua.html" class="motsanpham"
                             style="text-decoration: none; color: black;" data-toggle="tooltip" data-placement="bottom"
                             title="Lập Kế Hoạch Kinh Doanh Hiệu Quả">
-                            <img class="card-img-top anh" src="front/images/lap-ke-hoach-kinh-doanh-hieu-qua.jpg"
+                            <img class="card-img-top anh" src="fontend/images/lap-ke-hoach-kinh-doanh-hieu-qua.jpg"
                                 alt="lap-ke-hoach-kinh-doanh-hieu-qua">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Lập Kế Hoạch Kinh Doanh Hiệu Quả</h3>
@@ -258,7 +258,7 @@
                             style="text-decoration: none; color: black;" data-toggle="tooltip" data-placement="bottom"
                             title="Ma Bùn Lưu Manh Và Những Câu Chuyện Khác Của Nguyễn
                         Trí">
-                            <img class="card-img-top anh" src="front/images/ma-bun-luu-manh.jpg" alt="ma-bun-luu-manh">
+                            <img class="card-img-top anh" src="fontend/images/ma-bun-luu-manh.jpg" alt="ma-bun-luu-manh">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Ma Bùn Lưu Manh Và Những Câu Chuyện Khác Của Nguyễn
                                     Trí</h3>
@@ -285,7 +285,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Bank 4.0 - Giao dịch mọi nơi, không chỉ là ngân hàng">
-                            <img class="card-img-top anh" src="front/images/bank-4.0.jpg" alt="bank-4.0">
+                            <img class="card-img-top anh" src="fontend/images/bank-4.0.jpg" alt="bank-4.0">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Bank 4.0 - Giao dịch mọi nơi, không chỉ là ngân hàng
                                 </h3>
@@ -312,7 +312,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Bộ Sách 500 Câu Chuyện Đạo Đức - Những Câu Chuyện
                         Tình Thân (Bộ 8 Cuốn)">
-                            <img class="card-img-top anh" src="front/images/bo-sach-500-cau-chuyen-dao-duc.jpg"
+                            <img class="card-img-top anh" src="fontend/images/bo-sach-500-cau-chuyen-dao-duc.jpg"
                                 alt="bo-sach-500-cau-chuyen-dao-duc">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Bộ Sách 500 Câu Chuyện Đạo Đức - Những Câu Chuyện
@@ -340,7 +340,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Lịch Sử Ung Thư - Hoàng Đế Của Bách Bệnh">
-                            <img class="card-img-top anh" src="front/images/ung-thu-hoang-de-cua-bach-benh.jpg"
+                            <img class="card-img-top anh" src="fontend/images/ung-thu-hoang-de-cua-bach-benh.jpg"
                                 alt="ung-thu-hoang-de-cua-bach-benh">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Lịch Sử Ung Thư - Hoàng Đế Của Bách Bệnh</h3>
@@ -367,7 +367,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Cuốn Sách Khám Phá: Trời Đêm Huyền Diệu">
-                            <img class="card-img-top anh" src="front/images/troi-dem-huyen-dieu.jpg"
+                            <img class="card-img-top anh" src="fontend/images/troi-dem-huyen-dieu.jpg"
                                 alt="troi-dem-huyen-dieu">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Cuốn Sách Khám Phá: Trời Đêm Huyền Diệu</h3>
@@ -395,7 +395,7 @@
                             data-toggle="tooltip" data-placement="bottom"
                             title="Bộ Sách Những Câu Chuyện Cho Con Thành Người Tử Tế (Bộ 5 Cuốn)">
                             <img class="card-img-top anh"
-                                src="front/images/bo-sach-nhung-cau-chuyen-cho-con-thanh-nguoi-tu-te.jpg"
+                                src="fontend/images/bo-sach-nhung-cau-chuyen-cho-con-thanh-nguoi-tu-te.jpg"
                                 alt="bo-sach-nhung-cau-chuyen-cho-con-thanh-nguoi-tu-te">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Bộ Sách Những Câu Chuyện Cho Con Thành Người Tử Tế (Bộ 5
@@ -422,7 +422,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Lịch Sử Thế Giới">
-                            <img class="card-img-top anh" src="front/images/lich-su-the-gioi.jpg" alt="lich-su-the-gioi">
+                            <img class="card-img-top anh" src="fontend/images/lich-su-the-gioi.jpg" alt="lich-su-the-gioi">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Lịch Sử Thế Giới</h3>
                                 <small class="tacgia text-muted">Nam Phong tùng thư - Phạm Quỳnh chủ nhiệm</small>
@@ -464,7 +464,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Chuyện Nghề Và Chuyện Đời - Bộ 4 Cuốn">
-                            <img class="card-img-top anh" src="front/images/combo-chuyen-nghe-chuyen-doi.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-chuyen-nghe-chuyen-doi.jpg"
                                 alt="combo-chuyen-nghe-chuyen-doi">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Chuyện Nghề Và Chuyện Đời - Bộ 4 Cuốn</h3>
@@ -491,7 +491,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Combo Mẹ Con Sư Tử - Bồ Tát Ngàn Tay Ngàn Mắt">
-                            <img class="card-img-top anh" src="front/images/combo-me-con-su-tu-bo-tat-ngan-tay-ngan-mat.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-me-con-su-tu-bo-tat-ngan-tay-ngan-mat.jpg"
                                 alt="combo-me-con-su-tu-bo-tat-ngan-tay-ngan-mat">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Mẹ Con Sư Tử - Bồ Tát Ngàn Tay Ngàn Mắt</h3>
@@ -518,7 +518,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Combo Osho: Hạnh Phúc Tại Tâm, Can Đảm Biến Thách Thức Thành
                             Sức Mạnh & Sáng Tạo Bừng Cháy Sức Mạnh Bên Trong">
-                            <img class="card-img-top anh" src="front/images/combo-hanh-phuc-sang-tao.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-hanh-phuc-sang-tao.jpg"
                                 alt="combo-hanh-phuc-sang-tao">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Osho: Hạnh Phúc Tại Tâm, Can Đảm Biến Thách Thức Thành
@@ -547,7 +547,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Combo Giáo Dục Và Ý Nghĩa Cuộc Sống Và Bạn Đang Nghịch Gì Với Đời Mình?">
-                            <img class="card-img-top anh" src="front/images/combo-giao-duc-va-y-nghia-cuoc-song.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-giao-duc-va-y-nghia-cuoc-song.jpg"
                                 alt="combo-giao-duc-va-y-nghia-cuoc-song">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Giáo Dục Và Ý Nghĩa Cuộc Sống Và Bạn Đang Nghịch Gì Với
@@ -575,7 +575,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Combo Dinh Dưỡng Xanh - Thần dược xanh">
-                            <img class="card-img-top anh" src="front/images/combo-dinh-duong-than-duoc-xanh.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-dinh-duong-than-duoc-xanh.jpg"
                                 alt="combo-dinh-duong-than-duoc-xanh">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Dinh Dưỡng Xanh - Thần dược xanh</h3>
@@ -602,7 +602,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Combo Ăn Xanh Để Khỏe - Sống Lành Để Trẻ">
-                            <img class="card-img-top anh" src="front/images/combo-an-xanh-song-lanh.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-an-xanh-song-lanh.jpg"
                                 alt="combo-an-xanh-song-lanh">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Ăn Xanh Để Khỏe - Sống Lành Để Trẻ</h3>
@@ -629,7 +629,7 @@
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom"
                             title="Combo Lược Sử Loài Người - Lược Sử Tương Lai - 21 Bài Học Cho Thế Kỷ 21">
-                            <img class="card-img-top anh" src="front/images/combo-luoc-su-loai-nguoi.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-luoc-su-loai-nguoi.jpg"
                                 alt="combo-luoc-su-loai-nguoi">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Combo Lược Sử Loài Người - Lược Sử Tương Lai - 21 Bài Học Cho
@@ -656,7 +656,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Bộ Sách Phong Cách Sống (Bộ 5 Cuốn)">
-                            <img class="card-img-top anh" src="front/images/combo-phong-cach-song.jpg"
+                            <img class="card-img-top anh" src="fontend/images/combo-phong-cach-song.jpg"
                                 alt="combo-phong-cach-song">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Bộ Sách Phong Cách Sống (Bộ 5 Cuốn)</h3>
@@ -701,7 +701,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Ngoại Giao Của Chính Quyền Sài Gòn">
-                            <img class="card-img-top anh" src="front/images/ngoai-giao-cua-chinh-quyen-sai-gon.jpg"
+                            <img class="card-img-top anh" src="fontend/images/ngoai-giao-cua-chinh-quyen-sai-gon.jpg"
                                 alt="ngoai-giao-cua-chinh-quyen-sai-gon">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Ngoại Giao Của Chính Quyền Sài Gòn</h3>
@@ -724,7 +724,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Đường Mây Trên Đất Hoa">
-                            <img class="card-img-top anh" src="front/images/duong-may-tren-dat-hoa.jpg"
+                            <img class="card-img-top anh" src="fontend/images/duong-may-tren-dat-hoa.jpg"
                                 alt="duong-may-tren-dat-hoa">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Đường Mây Trên Đất Hoa</h3>
@@ -747,7 +747,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Muôn Kiếp Nhân Sinh">
-                            <img class="card-img-top anh" src="front/images/muon-kiep-nhan-sinh.jpg"
+                            <img class="card-img-top anh" src="fontend/images/muon-kiep-nhan-sinh.jpg"
                                 alt="muon-kiep-nhan-sinh">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Muôn Kiếp Nhân Sinh</h3>
@@ -770,7 +770,7 @@
                     <div class="card">
                         <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                             data-toggle="tooltip" data-placement="bottom" title="Đường Mây Trong Cõi Mộng">
-                            <img class="card-img-top anh" src="front/images/duong-may-trong-coi-mong.jpg"
+                            <img class="card-img-top anh" src="fontend/images/duong-may-trong-coi-mong.jpg"
                                 alt="duong-may-trong-coi-mong.jpg">
                             <div class="card-body noidungsp mt-3">
                                 <h3 class="card-title ten">Đường Mây Trong Cõi Mộng</h3>
@@ -812,7 +812,7 @@
                             <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                                 data-toggle="tooltip" data-placement="bottom"
                                 title="Từng bước chân nở hoa: Khi câu kinh bước tới">
-                                <img class="card-img-top anh" src="front/images/tung-buoc-chan-no-hoa.jpg"
+                                <img class="card-img-top anh" src="fontend/images/tung-buoc-chan-no-hoa.jpg"
                                     alt="tung-buoc-chan-no-hoa">
                                 <div class="card-body noidungsp mt-3">
                                     <h3 class="card-title ten">Từng bước chân nở hoa: Khi câu kinh bước tới</h3>
@@ -826,7 +826,7 @@
                         <div class="card">
                             <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                                 data-toggle="tooltip" data-placement="bottom" title="Cảm ơn vì đã được thương">
-                                <img class="card-img-top anh" src="front/images/cam-on-vi-da-duoc-thuong.jpg"
+                                <img class="card-img-top anh" src="fontend/images/cam-on-vi-da-duoc-thuong.jpg"
                                     alt="cam-on-vi-da-duoc-thuong">
                                 <div class="card-body noidungsp mt-3">
                                     <h3 class="card-title ten">Cảm ơn vì đã được thương</h3>
@@ -841,7 +841,7 @@
                             <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                                 data-toggle="tooltip" data-placement="bottom"
                                 title="Hào quang của vua Gia Long trong mắt Michel Gaultier">
-                                <img class="card-img-top anh" src="front/images/vua-gia-long.jpg" alt="vua-gia-long">
+                                <img class="card-img-top anh" src="fontend/images/vua-gia-long.jpg" alt="vua-gia-long">
                                 <div class="card-body noidungsp mt-3">
                                     <h3 class="card-title ten">Hào quang của vua Gia Long trong mắt Michel Gaultier</h3>
                                     <small class="thoigian text-muted">21/03/2020</small>
@@ -855,7 +855,7 @@
                             <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                                 data-toggle="tooltip" data-placement="bottom"
                                 title="Suối nguồn” và cái tôi hiện sinh trong từng cá thể">
-                                <img class="card-img-top anh" src="front/images/suoi-nguon-va-cai-toi-trong-tung-ca-the.jpg"
+                                <img class="card-img-top anh" src="fontend/images/suoi-nguon-va-cai-toi-trong-tung-ca-the.jpg"
                                     alt="suoi-nguon-va-cai-toi-trong-tung-ca-the">
                                 <div class="card-body noidungsp mt-3">
                                     <h3 class="card-title ten">"Suối nguồn” và cái tôi hiện sinh trong từng cá thể</h3>
@@ -870,7 +870,7 @@
                             <a href="#" class="motsanpham" style="text-decoration: none; color: black;"
                                 data-toggle="tooltip" data-placement="bottom"
                                 title="Đại dịch trên những con đường tơ lụa">
-                                <img class="card-img-top anh" src="front/images/dai-dich-tren-con-duong-to-lua.jpg"
+                                <img class="card-img-top anh" src="fontend/images/dai-dich-tren-con-duong-to-lua.jpg"
                                     alt="dai-dich-tren-con-duong-to-lua">
                                 <div class="card-body noidungsp mt-3">
                                     <h3 class="card-title ten">Đại dịch trên những con đường tơ lụa</h3>

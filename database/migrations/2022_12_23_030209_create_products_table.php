@@ -20,18 +20,12 @@ class CreateProductsTable extends Migration
             $table->float('sale_price',12,2);
             $table->string('image',255);
             $table->tinyInteger('status')->default(1);
-            $table->string('origin',255);
+            $table->text('description')->nullable();
+            $table->text('detail')->nullable();
             // khoá ngoại tới bảng categories
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
 
-            // khoá ngoại tới bảng promotions
-            $table->unsignedBigInteger('promotion_id');
-            $table->foreign('promotion_id')->references('id')->on('promotions');
-
-            // khoá ngoại tới bảng authors
-            $table->unsignedBigInteger('author_id');
-            $table->foreign('author_id')->references('id')->on('authors');
             $table->timestamps();
         });
     }

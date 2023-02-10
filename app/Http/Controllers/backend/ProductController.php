@@ -8,6 +8,9 @@ use App\Models\Category;
 use App\Models\Product;
 // Sử dụng model phải use model
 use App\Models\Product_Images;
+// use request
+use App\Http\Requests\product\StoreProductRequest;
+use App\Http\Requests\product\UpdateProductRequest;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -21,8 +24,8 @@ class ProductController extends Controller
     //  HIỂN THỊ
     public function index()
     {
-
-        $product = Product::Search()->paginate(3)->withQueryString();
+        // withQueryString() : giữ nguyên tham số khi chyển trang
+        $product = Product::Search()->paginate(7)->withQueryString();
         return view('backend.pages.product.index', compact('product'));
     }
 
@@ -47,12 +50,12 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     // THÊM MỚI
-    public function store(Request $request) //tiến hành thêm mới bằng phương thức post ,sử dụng Request tiêm vào phương thức
-
+    public function store(StoreProductRequest $request) //tiến hành thêm mới bằng phương thức post ,sử dụng Request tiêm vào phương thức
     {
         // dd($request->all());
         // upload 1 ảnh
         // kiểm tra người dùng có chọn file chưa
+        
         if ($request->hasFile('images')) {
             // gắn
             $file = $request->file;
@@ -67,6 +70,7 @@ class ProductController extends Controller
             'price' => $request->price,
             'sale_price' => $request->sale_price,
             'image' => $file_name,
+            'author' => $request->author,
             'status' => $request->status,
             'description' => $request->editor1,
             'detail' => $request->editor2,
@@ -126,7 +130,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateProductRequest $request, $id)
     {
 
         // dd($request->all());
@@ -139,12 +143,15 @@ class ProductController extends Controller
             $file_name = $file->getClientOriginalName();
             // di chuyển vào thư mục upload trong public
             $file->move(public_path('upload'), $file_name);
+        }else{
+            $file_name = $product->image;
         };
         $product->update([
             'name' => $request->name,
             'price' => $request->price,
             'sale_price' => $request->sale_price,
             'image' => $file_name,
+            'author' => $request->author,
             'status' => $request->status,
             'description' => $request->editor1,
             'detail' => $request->editor2,

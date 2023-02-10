@@ -32,15 +32,15 @@ return [
     |            "postmark", "log", "array", "failover"
     |
     */
-
+    // tài khoản đăng nhập vào google    
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'host' => 'smtp.gmail.com',
+            'port' =>587,
+            'encryption' => 'tls',
+            'username' => 'phanthanhthuy16112k@gmail.com',
+            'password' => 'ebnuypqtuxhtqnpl',
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -92,8 +92,10 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        // email dung để gửi
+        'address' => 'phanthanhthuy16112k@gmail.com',
+        // tên
+        'name' => 'ShopBook',
     ],
 
     /*

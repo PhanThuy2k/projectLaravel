@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'remember_token	'
     ];
 
     /**
@@ -33,7 +34,7 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    /**
+    /** 
      * The attributes that should be cast.
      *
      * @var array<string, string>
@@ -41,4 +42,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function scopeSearch($query)
+    {
+      $query = $query->where('name','like','%'.request()->keyword.'%');
+
+        return $query;
+    } 
 }

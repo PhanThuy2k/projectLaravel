@@ -1,11 +1,11 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="{{ route('admin.index') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">BACKHOA_APTECH</span>
-    </a>
+      <img class="logo-lg" src="{{url('backend')}}/images/logoAdmin.jpg" alt="">
+    </a> 
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
@@ -32,7 +32,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="{{url('backend')}}/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="{{url('backend')}}/images/user.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -95,6 +95,7 @@
                   </li>
                   <!-- end task item -->
                 </ul>
+                
               </li>
               <li class="footer">
                 <a href="#">View all tasks</a>
@@ -104,13 +105,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{url('backend')}}/images/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="{{url('backend')}}/images/admin.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Phan Thuy</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{url('backend')}}/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{url('backend')}}/images/admin.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer

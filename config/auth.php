@@ -1,5 +1,5 @@
 <?php
-
+// CẤU HÌNHHÌNH
 return [
 
     /*
@@ -37,6 +37,7 @@ return [
 
     'guards' => [
         'web' => [
+            // sử dụng session để đăng nhập
             'driver' => 'session',
             'provider' => 'users',
         ],
@@ -62,6 +63,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+            // mạc định là model user có thể sửa đổi
             'model' => App\Models\User::class,
         ],
 
@@ -90,6 +92,7 @@ return [
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',
+            // thời gian sống
             'expire' => 60,
             'throttle' => 60,
         ],

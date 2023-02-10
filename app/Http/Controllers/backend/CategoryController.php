@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\backend;
 
+use App\Http\Requests\category\StoreCategoryRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\category\UpdateCategoryRequest;
 use Illuminate\Http\Request;
 
 // Sử dụng model phải use model
@@ -18,9 +20,9 @@ class CategoryController extends Controller
      // HIỂN THỊ 
     public function index()
     {
-        $category = Category::paginate(3);
-        return view('backend.pages.category.index', compact('category'));
-    }
+        $categoryIndex = Category::paginate(7)->withQueryString();
+        return view('backend.pages.category.index', compact('categoryIndex'));
+    } 
 
     /**
      * Show the form for creating a new resource.
@@ -41,7 +43,7 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     // THÊM MỚI 
-    public function store(Request $request)
+    public function store(StoreCategoryRequest $request)
     {
          // dd($req->All()); lấy toàn bộ bảng
         // sử dụng câu lệnh thêm mới
@@ -86,7 +88,7 @@ class CategoryController extends Controller
      */
 
     //  SỬA DỮ LIỆU 
-    public function update(Request $request, $id)
+    public function update(UpdateCategoryRequest $request, $id)
     {
          // sử dụng câu lệnh sửa
          $category = Category::find($id)->update($request->all());

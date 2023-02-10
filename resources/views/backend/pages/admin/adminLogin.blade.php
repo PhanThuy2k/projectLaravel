@@ -6,7 +6,7 @@
     <ul>
         <li>{!! \Session::get('err') !!}</li>
     </ul>
-</div>
+</div> 
 @endif
 
 {{-- hiển thi khi đăng ký thành công --}}

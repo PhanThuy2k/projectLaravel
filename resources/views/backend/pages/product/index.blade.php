@@ -37,10 +37,11 @@
           <th>ID</th>
           <th>Tên</th>
           <th>Ảnh</th>
+          <th>Tác Giả</th>
           <th>Giá</th>
           <th>Giá Sale</th>
           <th>Danh Mục</th>
-          <th>chi tiet</th>
+          {{-- <th>chi tiet</th> --}}
           <th>Trạng Thái</th>
           {{-- <th>Miêu Tả</th> --}}
           <th>HOẠT ĐỘNG</th>
@@ -51,10 +52,11 @@
           <td>{{$value->id}}</td>
           <td>{{$value->name}}</td>
           <td> <img src="{{url('upload')}}/{{$value->image}}" alt="" width="100"> </td>
+          <td>{{$value->author}}</td>
           <td>{{$value->price}}</td>
           <td>{{$value->sale_price}}</td>
           <td>{{$value->getCategoryName->name}}</td>
-          <td>{{$value->detail}}</td>
+          {{-- <td>{{$value->detail}}</td> --}}
           <td>{{$value->status}}</td>
           {{-- <td>{{$value->description}}</td> --}}
           <td><a href="{{route('product.edit',$value->id)}}" class="btn btn-warning btn-sm "

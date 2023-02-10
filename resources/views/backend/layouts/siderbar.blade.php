@@ -6,11 +6,11 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{url('backend')}}/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="{{url('backend')}}/images/admin.jpg" class="" alt="User Image"><a href="{{ route('admin.index') }}"></a>
         </div> 
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p>Phan Thuy</p>
+          <a href=""><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
@@ -47,6 +47,7 @@
           <ul class="treeview-menu">
             <li><a href="{{ route('category.index') }}"><i class="fa fa-circle-o"></i> Category</a></li>
             <li><a href="{{ route('product.index') }}"><i class="fa fa-circle-o"></i> Product</a></li>
+            <li><a href="{{ route('order.index') }}"><i class="fa fa-circle-o"></i> Order</a></li>
           </ul>
         </li>
         <li>

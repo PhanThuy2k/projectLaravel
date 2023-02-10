@@ -4,14 +4,21 @@ namespace App\Http\Controllers\backend;
 // do không cùng cấp với controller nên phải use
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Auth;
-
+use Illuminate\Support\Facades\Auth;
+use App\Models\Product;
+use App\Models\Category;
+use App\Models\User;
+use App\Models\orderDetail;
 // HIỂN THỊ TRANG ADMIN
 class DasboardController extends Controller
 {
     public function index()
     {
-        return view('backend.index');
+        $category_total = Category::all()->count();
+        $product_total = Product::all()->count();
+        $orderDetail_total = orderDetail::all()->count();
+        $user_total = User::all()->count();
+        return view('backend.index',compact('category_total','product_total','orderDetail_total','user_total')); 
     }
 
     // LOGIN

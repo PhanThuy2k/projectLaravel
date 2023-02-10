@@ -55,16 +55,21 @@
                         <input type="file" class="form-control-file" id="exampleFormControlFile1"
                             value="{{old('image')}}" name="images[]" multiple>
                     </div>
+                    <div class="form-group">
+                        <label for="text">Author :</label>
+                        <input type="text" class="form-control" name="author" value="{{old('author')}}" placeholder="Enter name"
+                            id="name">
+                    </div>
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="radio" class="form-check-input" name="status" id="" value="1" checked>
-                            Còn hàng
+                             hiện
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
                             <input type="radio" class="form-check-input" name="status" id="" value="0">
-                            Hết hàng
+                            ẩn
                         </label>
                     </div>
                     <div class="form-row align-items-center">

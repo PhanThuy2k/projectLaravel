@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     // trang chinh 
     public function home()
-    {
+    {  
         // tìm theo id và giảm dần
         $product = Product::orderBy('id', 'DESC')->get();
         $product = Product::paginate(12);
